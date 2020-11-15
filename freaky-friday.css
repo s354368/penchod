@@ -39,20 +39,38 @@ body {
 }
 
 .menu a {
-  padding-right: 25px;
   font-size: 18px;
   color: white;
   text-decoration: none;
   justify-content: center;
+  padding: 20px;
+  padding-right: 25px;
 }
 
 .menu a:hover {
-  color: yellow;
+  background-color: #203647;
 }
 
 .main-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   flex-grow: 1;
   color: white;
+}
+.info-under {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+.info-under img {
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
 }
 
 .main-info p {
@@ -62,8 +80,8 @@ body {
 .footer {
   display:flex;
   align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  justify-content: space-evenly;
+  flex-direction: row;
   width: 100%;
   height: 15vh;
   color: white;
